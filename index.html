@@ -101,6 +101,23 @@
     .contact a:hover {
       background: #024b9c;
     }
+
+    .images {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    
+    .images img {
+      max-width: 180px;   /* adjust size per row */
+      height: auto;       /* keep the aspect ratio */
+      border-radius: 8px; /* rounded corners for nicer look */
+      object-fit: contain; /* show the whole image without cutting */
+      border: 1px solid #ddd;
+      background: #f9f9f9;
+      padding: 4px;
+    }
+    
   </style>
 </head>
 <body>
