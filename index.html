@@ -149,29 +149,6 @@
     
   </style>
 </head>
-
-  <script>
-  // Create lightbox dynamically
-  const lightbox = document.createElement('div');
-  lightbox.classList.add('lightbox');
-  document.body.appendChild(lightbox);
-
-  const images = document.querySelectorAll('.experience .images img');
-  images.forEach(img => {
-    img.addEventListener('click', () => {
-      lightbox.innerHTML = '';
-      const largeImg = document.createElement('img');
-      largeImg.src = img.src; 
-      lightbox.appendChild(largeImg);
-      lightbox.style.display = 'flex';
-    });
-  });
-
-  // Close on click
-  lightbox.addEventListener('click', () => {
-    lightbox.style.display = 'none';
-  });
-</script>
   
 <body>
 
@@ -307,6 +284,29 @@
     <a href="https://github.com/nazty16">GitHub</a>
     <a href="https://www.facebook.com/nazty00">Facebook</a>
   </section>
+
+    <script>
+      // Create lightbox dynamically
+      const lightbox = document.createElement('div');
+      lightbox.classList.add('lightbox');
+      document.body.appendChild(lightbox);
+    
+      const images = document.querySelectorAll('.experience .images img');
+      images.forEach(img => {
+        img.addEventListener('click', () => {
+          lightbox.innerHTML = '';
+          const largeImg = document.createElement('img');
+          largeImg.src = img.src; 
+          lightbox.appendChild(largeImg);
+          lightbox.style.display = 'flex';
+        });
+      });
+    
+      // Close on click
+      lightbox.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+      });
+    </script>
 
 </body>
 </html>
