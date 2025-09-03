@@ -291,6 +291,12 @@
       const lightbox = document.createElement('div');
       lightbox.classList.add('lightbox');
       document.body.appendChild(lightbox);
+
+      const lbImg = lightbox.querySelector('img');
+      const prevBtn = lightbox.querySelector('.lb-prev');
+      const nextBtn = lightbox.querySelector('.lb-next');
+
+      let currentIndex = -1;
     
       const images = document.querySelectorAll('.experience .images img');
       images.forEach(img => {
@@ -317,7 +323,6 @@
       function showNext() { openAt(currentIndex + 1); }
       function showPrev() { openAt(currentIndex - 1); }
 
-      closeBtn.addEventListener('click', closeLB);
       prevBtn.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
       nextBtn.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
 
