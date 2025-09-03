@@ -4,15 +4,201 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nazty16's Developer Portfolio</title>
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #24292e;
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+
+    h2 {
+      color: #24292e;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+    }
+
+    /* Work Experience */
+    .experience {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    /* Projects */
+    .project {
+      background: white;
+      margin: 2rem 0;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: #0366d6;
+    }
+
+    .images {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .images img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      background: #ddd;
+      border-radius: 8px;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+      margin: 3rem 0;
+    }
+
+    .contact a {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.7rem 1.5rem;
+      background: #0366d6;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .contact a:hover {
+      background: #024b9c;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, I'm James 👋</h1>
-  <p>I'm a freelance developer skilled in Java, Native Android and Flutter.</p>
-  <h2>Projects</h2>
-  <ul>
-    <li><a href="https://github.com/your-username/project1">Project 1</a></li>
-    <li><a href="https://github.com/your-username/project2">Project 2</a></li>
-  </ul>
-  <p>Contact me at: your.email@example.com</p>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Hello, I'm James 👋</h1>
+    <p>A freelance developer skilled in Java, Native Android, and Flutter</p>
+  </header>
+
+  <!-- Work Experience -->
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <div class="experience">
+      <h3>Junior Software Developer 3 – Local IT Company</h3>
+      <p><strong>September 2022 – Present</strong></p>
+      <ul>
+        <li>Worked on Employee Portal using Vue + Laravel</li>
+        <li>Developed Payroll System using GWT, GXT + Java</li>
+        <li>Career Progression: Dev 1 (2022) → Dev 2 (2023) → Dev 3 (2024–Present)</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+      <h3>RSPSMS</h3>
+      <p><em>Rice Spray Planner Scheduler and Monitoring System – Native Android</em></p>
+      <div class="images">
+        <img src="placeholder.png" alt="RSPSMS Screenshot 1">
+        <img src="placeholder.png" alt="RSPSMS Screenshot 2">
+        <img src="placeholder.png" alt="RSPSMS Screenshot 3">
+        <img src="placeholder.png" alt="RSPSMS Screenshot 4">
+        <img src="placeholder.png" alt="RSPSMS Screenshot 5">
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>USM Trike Tracker</h3>
+      <p><em>Native Android app for real-time tricycle tracking within the university campus</em></p>
+      <div class="images">
+        <img src="placeholder.png" alt="USM Trike Tracker Screenshot 1">
+        <img src="placeholder.png" alt="USM Trike Tracker Screenshot 2">
+        <img src="placeholder.png" alt="USM Trike Tracker Screenshot 3">
+        <img src="placeholder.png" alt="USM Trike Tracker Screenshot 4">
+        <img src="placeholder.png" alt="USM Trike Tracker Screenshot 5">
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>USM Mental Health Care</h3>
+      <p><em>Appointment and Counselling Scheduling System – Native Android</em></p>
+      <div class="images">
+        <img src="placeholder.png" alt="USM Mental Health Screenshot 1">
+        <img src="placeholder.png" alt="USM Mental Health Screenshot 2">
+        <img src="placeholder.png" alt="USM Mental Health Screenshot 3">
+        <img src="placeholder.png" alt="USM Mental Health Screenshot 4">
+        <img src="placeholder.png" alt="USM Mental Health Screenshot 5">
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Kapehan App</h3>
+      <p><em>A coffee ordering app – Native Android</em></p>
+      <div class="images">
+        <img src="placeholder.png" alt="Kapehan App Screenshot 1">
+        <img src="placeholder.png" alt="Kapehan App Screenshot 2">
+        <img src="placeholder.png" alt="Kapehan App Screenshot 3">
+        <img src="placeholder.png" alt="Kapehan App Screenshot 4">
+        <img src="placeholder.png" alt="Kapehan App Screenshot 5">
+      </div>
+    </div>
+
+    <div class="project">
+      <h3>Small Time POS</h3>
+      <p><em>Point-of-Sale System – Flutter</em></p>
+      <div class="images">
+        <img src="placeholder.png" alt="Small Time POS Screenshot 1">
+        <img src="placeholder.png" alt="Small Time POS Screenshot 2">
+        <img src="placeholder.png" alt="Small Time POS Screenshot 3">
+        <img src="placeholder.png" alt="Small Time POS Screenshot 4">
+        <img src="placeholder.png" alt="Small Time POS Screenshot 5">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out for freelance opportunities or collaborations.</p>
+    <a href="mailto:your.email@example.com">Email Me</a>
+    <a href="https://github.com/your-username">GitHub</a>
+    <a href="https://linkedin.com/in/your-username">LinkedIn</a>
+  </section>
+
 </body>
 </html>
