@@ -313,6 +313,21 @@
           lightbox.style.display = 'flex';
         });
       });
+
+      function showNext() { openAt(currentIndex + 1); }
+      function showPrev() { openAt(currentIndex - 1); }
+
+      closeBtn.addEventListener('click', closeLB);
+      prevBtn.addEventListener('click', (e) => { e.stopPropagation(); showPrev(); });
+      nextBtn.addEventListener('click', (e) => { e.stopPropagation(); showNext(); });
+
+      document.addEventListener('keydown', (e) => {
+        if (lightbox.getAttribute('aria-hidden') === 'false') {
+          if (e.key === 'Escape') closeLB();
+          if (e.key === 'ArrowLeft') showPrev();
+          if (e.key === 'ArrowRight') showNext();
+        }
+      });
     
       // Close on click
       lightbox.addEventListener('click', () => {
